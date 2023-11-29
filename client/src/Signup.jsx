@@ -19,7 +19,7 @@ function Signup() {
         password,
       })
       .then((result) => {
-        console.log(result);
+        // console.log(result);
         navigate("/home");
       })
       .catch((err) => console.log(err));
