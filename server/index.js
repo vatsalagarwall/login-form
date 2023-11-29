@@ -13,9 +13,7 @@ app.use(cors(
 ));
 app.use(express.json())
 
-
 mongoose.connect("mongodb+srv://bindalvatsaljpr:1234@user.2dib2rs.mongodb.net/user")
-
 
 app.get("/", (req, res) => {
     res.json("Hello")
