@@ -10,11 +10,11 @@ function Login() {
   const [redirectToHome, setRedirectToHome] = useState(false);
 
   //   const navigate = useNavigate();
-
+  axios.defaults.withCredentials = true;
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:5001/login", { email, password })
+      .post("https://login-form-xi-orcin.vercel.app/login", { email, password })
       .then((result) => {
         console.log(result);
         if (result.data === "Success") {

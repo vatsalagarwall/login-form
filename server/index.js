@@ -4,8 +4,15 @@ const cors = require('cors')
 const EmployeeModel = require('./models/Employee')
 
 const app = express()
+app.use(cors(
+    {
+        origin: ["https://login-form-zta8.vercel.app/"],
+        methods: ["POST", "GET"],
+        credentials: true
+    }
+));
 app.use(express.json())
-app.use(cors())
+
 
 mongoose.connect("mongodb://127.0.0.1:27017/login-register-employees")
 
