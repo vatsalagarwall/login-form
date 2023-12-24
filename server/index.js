@@ -14,7 +14,7 @@ app.use(cors(
 app.use(express.json())
 
 
-mongoose.connect("mongodb://127.0.0.1:27017/login-register-employees")
+mongoose.connect("mongodb+srv://bindalvatsaljpr:1234@user.2dib2rs.mongodb.net/?retryWrites=true&w=majority")
 
 
 app.get("/", (req, res) => {
