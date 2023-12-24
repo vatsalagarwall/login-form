@@ -6,7 +6,7 @@ const EmployeeModel = require('./models/Employee')
 const app = express()
 app.use(cors(
     {
-        origin: ["https://login-form-zta8.vercel.app/"],
+        origin: ["http:localhost:3000"],
         methods: ["POST", "GET"],
         credentials: true
     }
@@ -14,7 +14,7 @@ app.use(cors(
 app.use(express.json())
 
 
-mongoose.connect("mongodb+srv://bindalvatsaljpr:1234@user.2dib2rs.mongodb.net/?retryWrites=true&w=majority")
+mongoose.connect("mongodb+srv://bindalvatsaljpr:1234@user.2dib2rs.mongodb.net/user")
 
 
 app.get("/", (req, res) => {

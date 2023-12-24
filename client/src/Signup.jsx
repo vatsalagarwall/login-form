@@ -13,7 +13,7 @@ function Signup() {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("https://login-form-xi-orcin.vercel.app/register", {
+      .post("http:localhost:5001/register", {
         name,
         email,
         password,

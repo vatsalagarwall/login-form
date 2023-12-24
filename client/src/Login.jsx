@@ -14,7 +14,7 @@ function Login() {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("https://login-form-xi-orcin.vercel.app/login", { email, password })
+      .post("http:localhost:5001/login", { email, password })
       .then((result) => {
         console.log(result);
         if (result.data === "Success") {
